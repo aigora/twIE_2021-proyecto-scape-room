@@ -1,11 +1,11 @@
-# [Scape room]
+# [Título del trabajo]
 
-[Se trata de un juego de hasta 4 participantes quienes competirán en los diferentes niveles y lucharán por llegar al final antes que el resto, el jugador que consiga superar las pruebas primero será el ganador de la partida]
+[Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
 
-[Jorge Sánchez Serafín/ jorge-sánchez-serafín, Marta Garrido Algaba/ marta-garrido-algaba, Carlos Ramírez .../  Óscar Sáez Polo/ oscar.saez ]
+[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
 
 ## Objetivos del trabajo
 
-[Aprender a trabajar con GibHub y conocer la programaciob desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.]
+[Lista de los objetivos que se persiguen con el trabajo propuesto.]
