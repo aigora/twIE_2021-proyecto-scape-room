@@ -4,7 +4,7 @@
 
 ## Integrantes del equipo
 
-[Jorge Sánchez Serafín/ jorge-sánchez-serafín, Marta Garrido Algaba/ marta-garrido-algaba, Carlos Ramírez .../  Óscar Sáez Polo/ oscar.saez ]
+[Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-garrido-algaba, Carlos Ramírez .../  Óscar Sáez Polo  @oscar.saez ]
 
 ## Objetivos del trabajo
 
