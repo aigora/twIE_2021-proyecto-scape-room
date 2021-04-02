@@ -8,4 +8,4 @@
 
 ## Objetivos del trabajo
 
-[Aprender a trabajar con GibHub y conocer la programaciob desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.]
+[Aprender a trabajar con GibHub y conocer la programacion desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.]
