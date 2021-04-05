@@ -4,7 +4,7 @@ Se trata de un juego de hasta 4 participantes quienes competirán en los diferen
 
 ## Integrantes del equipo
 
-Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-garrido-algaba, Carlos Ramírez Gonzalez/  Óscar Sáez Polo  @oscar.saez 
+Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-garrido-algaba, Carlos Ramírez Gonzalez @Carlos-ramirez02, Óscar Sáez Polo  @oscar.saez 
 
 ## Objetivos del trabajo
 
