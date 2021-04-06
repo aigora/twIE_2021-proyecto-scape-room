@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+  int x;
+  printf("Hola buenas bienvenido a scape room, introduce un 1 para entrar al menu principal o un 2 para salir: ");
+  scanf("%i",&x);
+  switch (x){
+case 2: printf("¡Nos vemos pronto!");break;
+case 1: printf("¡Hola, has entrado al menu principal comencemos!");
+int op;
+char jug1, jug2, jug3, jug4;
+printf("Seleccione el numero de jugadores de 1 a 4: ");
+scanf("%i",&op);
+switch (op){
+case 1: printf("Escriba el nombre del jugador 1:");
+ scanf("%c",&jug1);
+}
+  }
+
+  return 0;
+}
