@@ -1,88 +1,109 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<conio.h>
+#include<string.h>
 
-int num [4],i;
-char arr[8],op1,op2,op3;
+#define MIN_JUG 2
+#define MAX_JUG 4
+#define TAM_STR 64
 
-main ()
+enum nivel
 {
+    BAJO,
+    MEDIO,
+    ALTO,
+};
+
+int main ()
+{
+    int numJ=-1,respuesta;
+    char op1,op2,nomJ[MAX_JUG][TAM_STR];
+    char auxlvl[TAM_STR];
+    int lvlJ[MAX_JUG];
+    printf(" Hola! Bienvenido a Scape Room ");
     do
     {
-        system("cls");
-        printf(" Hola! Bienvenido a Scape Room\n\n E. Entrar\n\n S. Salir\n\n Opcion: ");
-        scanf("%c",&op1);
+        printf("\n\n MENU PRINCIPAL\n\n 1. Ingrese jugadores\n\n 2. Asignar niveles \n\n 3. Salir\n\n Opcion: ");
+        scanf(" %c",&op1);
 
         switch(op1)
         {
-            case 'E':
+            case '1':
+
                 do
+                {
+                  printf("\n    Ingrese el numero de jugadores: ");
+                  scanf("%d",&numJ);
+                  respuesta=1;
+                  if(numJ<MIN_JUG || numJ>MAX_JUG)
+                  {
+                      respuesta=-1;
+                      printf("\n       Numero de jugadores incorrecto (entre 2 y 4)\n");
+                  }
+                }
+                while(respuesta==-1);
+                for(int i=0;i<numJ;i++)
+                  {
+                  printf("\n    Nombre del jugador %d: ",i+1);
+                  scanf("%s",&nomJ[i]);
+                  }
+             break;
+
+             case '2':
+                 if(numJ==-1)
                  {
-                     system("cls");
-                     printf(" J. Jugadores\n\n R. Regresar\n\n S. Salir\n\n Opcion: ");
-                     scanf("%c",&op2);
-
-                     switch (op2)
-                     {
-                          case 'J':
-
-                              {
-                                  printf("\n Ingrese el numero de jugadores: ",i);
-                                  scanf("%i",&i);
-
-                                  switch (i)
-                                  {
-                                  case 2:
-                                      printf("\n Nombre del jugador 1: ");
-
-                                      printf("\n\n Nombre del jugador 2: ");
-                                  break;
-
-                                  case 3:
-                                      printf("\n Nombre del jugador 1: ");
-
-                                      printf("\n\n Nombre del jugador 2: ");
-
-                                      printf("\n\n Nombre del jugador 3: ");
-                                  break;
-
-                                  case 4:
-                                      printf("\n Nombre del jugador 1: ");
-
-                                      printf("\n\n Nombre del jugador 2: ");
-
-                                      printf("\n\n Nombre del jugador 3: ");
-
-                                      printf("\n\n Nombre del jugador 4: ");
-
-                                  break;
-
-                                  default:
-                                    printf("El numero de jugadores tiene que ser mayor que uno y menor o igual que 4");
-                                  break;
-                                  }
-                           break;
-
-                           case 'S':
-                               printf("\n Estas seguro de que quieres salir ...?? SI o NO\n\n");
-                               printf(" 1. SI\n\n 2. NO\n\n Opcion: ");
-                           break;
-
-                              }
-                     getch();
-                     }
-                     getch();
+                     printf("\n    Es necesario crear jugadores para asignar nivel (seleccionar opcion 1)");
                  }
-                while(op2!='R');
-            break;
+                 else
+                 {
+                    for(int i=0;i<numJ;i++)
+                    {
 
-            case 'S':
-                printf("\n Estas seguro de que quieres salir ...?? SI o NO\n\n");
-                printf(" 1. SI\n\n 2. NO\n\n Opcion: ");
-            break;
+                        do
+                        {
+                            printf("\n    Asignar nivel a jugador %s: ",nomJ[i]);
+                            scanf("%s",&auxlvl);
+                            respuesta=1;
+                            if(strcmp(auxlvl,"bajo")==0)
+                              {
+                                  lvlJ[i]=BAJO;
+                              }
+                            else if(strcmp(auxlvl,"medio")==0)
+                              {
+                                  lvlJ[i]=MEDIO;
+                              }
+                            else if(strcmp(auxlvl,"alto")==0)
+                              {
+                                  lvlJ[i]=ALTO;
+                              }
+                            else
+                            {
+                                printf("\n      Respuesta no valida (bajo, medio, alto)\n");
+                                respuesta=-1;
+                            }
+                        }
+                        while (respuesta==-1);
+
+                    }
+                 }
+
+              break;
+
+              case '3':
+                printf("\n    Estas seguro de que quieres salir (S o N)?: ");
+                scanf(" %c",&op2);
+                if(op2=='S' || op2=='s')
+                {
+                    return 0;
+                }
+              break;
+
+              default:
+                printf("\n    Opcion no valida");
+              break;
         }
-         getch();
+
     }
-    while(op1!='s');
+    while(1);
+    return 0;
 
 }
