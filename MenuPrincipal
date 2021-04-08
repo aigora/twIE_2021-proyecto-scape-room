@@ -1,22 +1,75 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
 
-int main()
+int num [4],i;
+char arr[8],op1,op2,op3;
+
+main ()
 {
-  int x;
-  printf("Hola buenas bienvenido a scape room, introduce un 1 para entrar al menu principal o un 2 para salir: ");
-  scanf("%i",&x);
-  switch (x){
-case 2: printf("¡Nos vemos pronto!");break;
-case 1: printf("¡Hola, has entrado al menu principal comencemos!");
-int op;
-char jug1, jug2, jug3, jug4;
-printf("Seleccione el numero de jugadores de 1 a 4: ");
-scanf("%i",&op);
-switch (op){
-case 1: printf("Escriba el nombre del jugador 1:");
- scanf("%c",&jug1);
-}
-  }
+    do
+    {
+        system("cls");
+        printf(" Hola! Bienvenido a Scape Room\n\n E. Entrar\n\n S. Salir\n\n Opcion: ");
+        scanf("%c",&op1);
 
-  return 0;
+        switch(op1)
+        {
+            case 'E':
+                do
+                 {
+                     system("cls");
+                     printf(" J. Jugadores\n\n R. Regresar\n\n S. Salir\n\n Opcion: ");
+                     scanf("%c",&op2);
+
+                     switch (op2)
+                     {
+                          case 'J':
+
+                              {
+                                  printf("\nIngrese el numero de jugadores: ",i);
+                                  scanf("%i",&i);
+
+                                  switch (i)
+                                  {
+                                  case 2:
+                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n");
+                                  break;
+
+                                  case 3:
+                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n Nombre del jugador 3: ");
+                                  break;
+
+                                  case 4:
+                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n Nombre del jugador 3: \n\n Nombre del jugador 4: ");
+                                  break;
+
+                                  default:
+                                    printf("El numero de jugadores tiene que ser mayor que uno y menor o igual que 4");
+                                  break;
+                                  }
+                           break;
+
+                           case 'S':
+                               printf("\n Estas seguro de que quieres salir ...?? SI o NO\n\n");
+                               printf(" 1. SI\n\n 2. NO\n\n Opcion: ");
+                           break;
+
+                              }
+                     getch();
+                     }
+                     getch();
+                 }
+                while(op2!='R');
+            break;
+
+            case 'S':
+                printf("\n Estas seguro de que quieres salir ...?? SI o NO\n\n");
+                printf(" 1. SI\n\n 2. NO\n\n Opcion: ");
+            break;
+        }
+         getch();
+    }
+    while(op1!='s');
+
 }
