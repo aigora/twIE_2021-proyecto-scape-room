@@ -27,21 +27,34 @@ main ()
                           case 'J':
 
                               {
-                                  printf("\nIngrese el numero de jugadores: ",i);
+                                  printf("\n Ingrese el numero de jugadores: ",i);
                                   scanf("%i",&i);
 
                                   switch (i)
                                   {
                                   case 2:
-                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n");
+                                      printf("\n Nombre del jugador 1: ");
+
+                                      printf("\n\n Nombre del jugador 2: ");
                                   break;
 
                                   case 3:
-                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n Nombre del jugador 3: ");
+                                      printf("\n Nombre del jugador 1: ");
+
+                                      printf("\n\n Nombre del jugador 2: ");
+
+                                      printf("\n\n Nombre del jugador 3: ");
                                   break;
 
                                   case 4:
-                                      printf("\n Nombre del jugador 1: \n\n Nombre del jugador 2: \n\n Nombre del jugador 3: \n\n Nombre del jugador 4: ");
+                                      printf("\n Nombre del jugador 1: ");
+
+                                      printf("\n\n Nombre del jugador 2: ");
+
+                                      printf("\n\n Nombre del jugador 3: ");
+
+                                      printf("\n\n Nombre del jugador 4: ");
+
                                   break;
 
                                   default:
